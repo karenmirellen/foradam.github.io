@@ -1,0 +1,125 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: Louis george Cafe, sans-serif;
+    line-height: 1.7;
+    background-color: #f8f8f8;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+    padding: 30px 0;
+}
+
+header h1 {
+    color: #40e2ff;
+    font-size: 36px;
+}
+
+main {
+    padding: 50px 0;
+}
+
+.love-letter {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+.love-letter h2 {
+    color: #40e2ff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.love-letter p {
+    margin-bottom: 20px;
+}
+
+.couple-picture {
+    flex: 1;
+    text-align: center;
+}
+
+.couple-picture img {
+    max-width: 80%;
+    border-radius: 100px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px 0;
+    background-color: #40e2ff;
+    color: #fff;
+}
+
+/* Button Styles */
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #40e2ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2ca6ce;
+}
+
+/* Button Styles */
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #40e2ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2ca6ce;
+}
+
+.heart {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-image: url('https://i.imgur.com/TpT69Ay.png'); 
+    background-size: cover;
+    animation: heartAnimation 2s infinite;
+}
+
+@keyframes heartAnimation {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-800px) rotate(720deg);
+        opacity: 0;
+    }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Letter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Happy Valentine's Day!</h1>
+    <button id="show-letter-btn">Read Letter</button>
+    <button id="show-hearts-btn">CLICK HERE FIRST</button>
+</header>
+
+<main>
+    <div class="container">
+        <div class="love-letter" style="display: none;">
+            <h2>To the most handsome man in the world </h2>
+            <p>I wrote a text talking about how much I love you and how cliché it's to write texts saying how much I love you, and at the end of the text, I said that I hoped that one day you could feel the same way about me. But the funny thing is, a day later, you said you love me, lol. Okay, I'll try not to be so gay, but you know, I'm gay. I think it's important to tell you and try to show you how much I care and how I feel about you.</p>
+            <p>I like our relationship; you're my friend, my boyfriend, my cook, my nerd guy, my tech guy – you've been many things to me since I met you. Pause, I'm crying now, and I feel extremely ridiculous, but in my defense, I'm on my period, and I cried trying to write this online letter because after over 4 hours of work, my code didn't work, so forgive me. </p>
+            <p>Adam what I want to say is thank you for being so understanding and loving these 9 months together, I know time is short but I enjoy living every moment I can with you. Sorry for pressuring you and happy valentine's day</p>
+            <p>With all my love,</p>
+            <p>[Karen]</p>
+        </div>
+        <div class="couple-picture">
+            <img src="https://i.imgur.com/CFDRRyB.jpg" alt="Couple Picture">
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p> Thank you for being the best boyfriend ever</p>
+</footer>
+
+<script src="script.js"></script>
+<script>
+    const showHeartsBtn = document.getElementById('show-hearts-btn');
+
+    showHeartsBtn.addEventListener('click', function() {
+        createHearts();
+    });
+
+    function createHearts() {
+        const container = document.querySelector('.container');
+
+        for (let i = 0; i < 10; i++) {
+            const heart = document.createElement('div');
+            heart.classList.add('heart');
+            heart.style.top = `${Math.random() * 100}vh`;
+            heart.style.left = `${Math.random() * 100}vw`;
+            container.appendChild(heart);
+        }
+    }
+</script>
+</body>
+</html>
